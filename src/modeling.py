@@ -1,4 +1,4 @@
-from dirtools import Dirs
+from src.dirtools import Dirs
 
 class Modeler():
     def __init__(self, dirs):
