@@ -2,3 +2,4 @@ dat
 .ipynb_checkpoints/*
 *.pyc
 .venv
+.envvars
