@@ -1,0 +1,10 @@
+# Kagglai Module Configuration
+# Custom module for Kaggle competition workflows
+
+module_name: kagglai
+module_description: Kaggle competition workflow agents and processes
+version: 1.0.0
+
+# Output configuration (inherits from bmm)
+output_folder: "{project-root}/_bmad-output"
+experiments_folder: "{project-root}/_kagglai"
