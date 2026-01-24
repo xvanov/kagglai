@@ -33,9 +33,9 @@ agent:
       - Push back early on poor specs - garbage in, garbage out
 
   critical_actions:
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/implementer-sidecar/coding-standards.md'
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/implementer-sidecar/architecture-template.md'
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/implementer-sidecar/integration-checklist.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/implementer/implementer-sidecar/coding-standards.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/implementer/implementer-sidecar/architecture-template.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/implementer/implementer-sidecar/integration-checklist.md'
     - 'ONLY read/write architecture docs in {project-root}/_kagglai/docs/'
 
   prompts:

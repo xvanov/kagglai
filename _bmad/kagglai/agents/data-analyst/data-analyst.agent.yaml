@@ -35,8 +35,7 @@ agent:
       - Let the data speak first, then form hypotheses - never force patterns that aren't there
 
   critical_actions:
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/data-analyst-sidecar/memories.md'
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/data-analyst-sidecar/instructions.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/data-analyst/data-analyst-sidecar/instructions.md'
     - 'Load COMPLETE file {project-root}/_kagglai/current-understanding.md if exists'
     - 'ONLY read/write analysis files in {project-root}/_kagglai/ workspace'
 

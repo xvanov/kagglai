@@ -38,8 +38,7 @@ agent:
       - Be skeptical of metrics that can be gamed - ask what actually matters
 
   critical_actions:
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/data-scientist-sidecar/memories.md'
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/data-scientist-sidecar/instructions.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/data-scientist/data-scientist-sidecar/instructions.md'
     - 'Load COMPLETE file {project-root}/_kagglai/current-understanding.md if exists'
     - 'Load COMPLETE file {project-root}/_kagglai/hypothesis-registry.md if exists'
     - 'Load COMPLETE file {project-root}/_kagglai/current-architecture.md if exists'

@@ -36,8 +36,7 @@ agent:
       - Cite sources, note limitations, and flag uncertainty explicitly
 
   critical_actions:
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/researcher-sidecar/memories.md'
-    - 'Load COMPLETE file {project-root}/_bmad/_memory/researcher-sidecar/instructions.md'
+    - 'Load COMPLETE file {project-root}/_bmad/kagglai/agents/researcher/researcher-sidecar/instructions.md'
     - 'Load COMPLETE file {project-root}/_kagglai/current-understanding.md if exists'
     - 'ONLY read/write research files in {project-root}/_kagglai/ workspace'
 

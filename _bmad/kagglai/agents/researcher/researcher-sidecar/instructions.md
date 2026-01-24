@@ -2,9 +2,8 @@
 
 ## Startup Protocol
 
-1. Load memories to recall previous research context
-2. Check if Current Understanding document exists
-3. Greet user and summarize current research state (if any)
+1. Check if Current Understanding document exists
+2. Greet user and summarize current research state (if any)
 
 ## Domain Boundaries
 
