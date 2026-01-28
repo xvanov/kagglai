@@ -1,0 +1,114 @@
+code: bmds
+name: "BMDS: BMAD Data Science"
+header: "Scientific ML Workflows with Hypothesis-Driven Experimentation"
+subheader: "Rigorous data science methodology with living documentation"
+default_selected: false
+
+# Variables from Core Config inserted:
+## user_name
+## communication_language
+## document_output_language
+## output_folder
+
+# =============================================================================
+# PROJECT IDENTITY
+# =============================================================================
+
+project_name:
+  prompt: "What is the name of your data science project?"
+  default: "{directory_name}"
+  result: "{value}"
+
+# =============================================================================
+# DIRECTORY STRUCTURE
+# =============================================================================
+
+bmds_output_folder:
+  prompt: "Where should BMDS living documents be stored?"
+  default: "_bmds"
+  result: "{project-root}/{value}"
+
+source_folder:
+  prompt: "Where should source code be stored?"
+  default: "src"
+  result: "{project-root}/{value}"
+
+data_folder:
+  prompt: "Where should data files be stored?"
+  default: "data"
+  result: "{project-root}/{value}"
+
+models_folder:
+  prompt: "Where should model artifacts be stored?"
+  default: "models"
+  result: "{project-root}/{value}"
+
+experiments_folder:
+  prompt: "Where should experiment folders be stored?"
+  default: "experiments"
+  result: "{project-root}/{value}"
+
+notebooks_folder:
+  prompt: "Where should Jupyter notebooks be stored?"
+  default: "notebooks"
+  result: "{project-root}/{value}"
+
+outputs_folder:
+  prompt: "Where should outputs (predictions, reports) be stored?"
+  default: "outputs"
+  result: "{project-root}/{value}"
+
+# =============================================================================
+# EXPERIMENT SETTINGS
+# =============================================================================
+
+experiment_prefix:
+  prompt: "What prefix should experiments use? (e.g., E-001, EXP-001)"
+  default: "E"
+  result: "{value}"
+
+# =============================================================================
+# MLOPS INTEGRATION
+# =============================================================================
+
+enable_mlflow:
+  prompt: "Enable MLflow integration for experiment tracking?"
+  default: true
+  result: "{value}"
+
+mlflow_tracking_uri:
+  prompt: "MLflow tracking URI (leave empty for local ./mlruns)?"
+  default: ""
+  result: "{value}"
+
+enable_dvc:
+  prompt: "Enable DVC for data versioning?"
+  default: true
+  result: "{value}"
+
+# =============================================================================
+# NOTEBOOK GENERATION
+# =============================================================================
+
+generate_eda_notebooks:
+  prompt: "Generate Jupyter notebooks during EDA steps?"
+  default: true
+  result: "{value}"
+
+# =============================================================================
+# USER EXPERIENCE
+# =============================================================================
+
+user_skill_level:
+  prompt:
+    - "What is your data science experience level?"
+    - "This affects how agents explain concepts and techniques."
+  default: "intermediate"
+  result: "{value}"
+  single-select:
+    - value: "beginner"
+      label: "Beginner - Explain concepts and provide examples"
+    - value: "intermediate"
+      label: "Intermediate - Balanced approach"
+    - value: "expert"
+      label: "Expert - Direct and technical, minimal explanation"

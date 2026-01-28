@@ -1,0 +1,35 @@
+# BMDS Runtime Configuration
+# These settings can be modified after installation
+
+# Living Documents
+hypothesis_registry_file: "hypothesis-registry.md"
+current_understanding_file: "current-understanding.md"
+current_architecture_file: "current-architecture.md"
+
+# Problem Definition
+problem_inputs_folder: "problem-inputs"
+docs_folder: "_bmds/docs"
+
+# Output Folders (same as docs_folder for living documents)
+bmds_output_folder: "_bmds/docs"
+
+# Experiment Tracking
+experiment_numbering_start: 1
+experiment_numbering_digits: 3
+
+# MLflow Settings (if enabled)
+mlflow_experiment_name: "{project_name}"
+mlflow_artifact_location: null  # Uses default
+
+# DVC Settings (if enabled)
+dvc_remote_name: "storage"
+dvc_auto_stage: true
+
+# Notebook Settings (if enabled)
+notebook_kernel: "python3"
+notebook_template: null  # Uses default template
+
+# Agent Behavior
+auto_update_understanding: true
+require_hypothesis_review: true
+require_code_review: true
