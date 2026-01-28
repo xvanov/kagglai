@@ -3,3 +3,7 @@ dat
 *.pyc
 .venv
 .envvars
+
+# BMAD build outputs
+_bmad-output/
+_bmad/bmb/workflows/module/output/
